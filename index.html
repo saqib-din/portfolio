@@ -1,1013 +1,836 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Saqib Din — Master Craftsman of Digital Excellence</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saqib Din — Elite Laravel Artisan</title>
     <meta
       name="description"
-      content="Saqib Din | Full Stack Developer & Laravel Artisan — Premium Portfolio"
+      content="Saqib Din | Award-Winning Full Stack Developer specializing in Laravel, PHP, and Premium Web Applications — World-Class Portfolio"
     />
 
+    <!-- Premium Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
       rel="stylesheet"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="sd-1.png" />
   </head>
   <body>
-    <div class="luxury-bg">
-      <div class="luxury-orb orb-1"></div>
-      <div class="luxury-orb orb-2"></div>
-      <div class="luxury-orb orb-3"></div>
-      <div class="luxury-orb orb-4"></div>
+    <!-- Immersive Background System -->
+    <div class="immersive-bg">
+      <canvas id="particleCanvas"></canvas>
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="gradient-orb orb-4"></div>
+      <div class="gradient-orb orb-5"></div>
     </div>
 
-    <div class="pattern-overlay"></div>
+    <div class="noise-overlay"></div>
+    <div class="grid-overlay"></div>
 
-    <div class="decorative-line line-left"></div>
-    <div class="decorative-line line-right"></div>
+    <!-- Cursor Follower -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-    <div class="portfolio-container">
-      <header class="header-luxe">
-        <div class="header-wrapper">
-          <a href="#home" class="brand-identity">
-            <div class="brand-emblem">
-              <div class="emblem-frame">
-                <div class="emblem-inner">
-                  <img src="sd.png" alt="Saqib Din" class="emblem-image" />
-                </div>
-                <div class="emblem-glow"></div>
-              </div>
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <div class="loader-content">
+        <div class="loader-logo">
+          <img src="sd.png" alt="SD" />
+        </div>
+        <div class="loader-text">Loading</div>
+        <div class="loader-bar">
+          <div class="loader-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="portfolio-supreme">
+      <!-- Navigation -->
+      <nav class="nav-supreme">
+        <div class="nav-container">
+          <a href="#home" class="nav-brand">
+            <div class="brand-icon">
+              <img src="sd.png" alt="Saqib Din" />
+              <div class="brand-glow"></div>
             </div>
-            <div class="brand-text">
-              <h1 class="brand-name">Saqib Din</h1>
-              <p class="brand-tagline">Digital Craftsman · Code Artisan</p>
+            <div class="brand-info d-flex flex-column lh-sm">
+              <span class="brand-name">Saqib Din</span>
+              <span class="brand-title">Laravel Artisan</span>
             </div>
           </a>
 
-          <nav class="nav-elegant">
-            <a href="#about" class="nav-item">
-              <span class="nav-number">01</span>
-              <span class="nav-text">About</span>
+          <div class="nav-links">
+            <a href="#about" class="nav-link" data-text="About">
+              <span>01</span>About
             </a>
-            <a href="#journey" class="nav-item">
-              <span class="nav-number">02</span>
-              <span class="nav-text">Journey</span>
+            <a href="#expertise" class="nav-link" data-text="Expertise">
+              <span>02</span>Expertise
             </a>
-            <a href="#works" class="nav-item">
-              <span class="nav-number">03</span>
-              <span class="nav-text">Works</span>
+            <a href="#works" class="nav-link" data-text="Works">
+              <span>03</span>Works
             </a>
-            <a href="#mastery" class="nav-item">
-              <span class="nav-number">04</span>
-              <span class="nav-text">Mastery</span>
+            <a href="#skills" class="nav-link" data-text="Skills">
+              <span>04</span>Skills
             </a>
-            <a href="#connect" class="nav-item nav-highlight">
-              <span class="nav-text">Connect</span>
+            <a href="#contact" class="nav-link nav-cta">
+              <span>Let's Connect</span>
               <i class="bi bi-arrow-right"></i>
             </a>
-          </nav>
-        </div>
-
-        <!-- Ornamental Divider -->
-        <div class="header-ornament">
-          <div class="ornament-left"></div>
-          <div class="ornament-center">
-            <span class="ornament-diamond">◆</span>
           </div>
-          <div class="ornament-right"></div>
+
+          <button class="nav-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-      </header>
+      </nav>
 
-      <!-- Main Content -->
-      <main class="main-luxe">
-        <!-- Hero Masterpiece -->
-        <section id="home" class="hero-masterpiece">
-          <div class="hero-layout">
-            <!-- Hero Content -->
-            <div class="hero-content fade-in-up">
-              <!-- Subtitle Badge -->
-              <div class="hero-badge">
-                <span class="badge-icon">✦</span>
-                <span class="badge-text">Welcome to Excellence</span>
-                <span class="badge-icon">✦</span>
-              </div>
+      <!-- Hero Section -->
+      <section id="home" class="hero-elite">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+              <i class="bi bi-stars"></i>
+              <span>Welcome to Digital Excellence</span>
+              <i class="bi bi-stars"></i>
+            </div>
 
-              <!-- Main Title -->
-              <h1 class="hero-title">
-                <span class="title-line">Crafting Digital</span>
-                <span class="title-line title-emphasis">Masterpieces</span>
-                <span class="title-line">With Elegant Code</span>
-              </h1>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+              <span class="title-line">Architecting</span>
+              <span class="title-line title-highlight"
+                >Digital Masterpieces</span
+              >
+              <span class="title-line">With Precision Code</span>
+            </h1>
 
-              <!-- Description -->
-              <p class="hero-description">
-                I am <strong>Saqib Din</strong>, a devoted full-stack developer
-                who transforms visions into extraordinary digital experiences.
-                Through the artful combination of
-                <strong>Laravel's robust architecture</strong> and
-                <strong>meticulously crafted front-end interfaces</strong>, I
-                create applications that are not merely functional, but truly
-                exceptional — where every pixel serves a purpose and every
-                interaction delights the user.
-              </p>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+              I am <strong>Saqib Din</strong>, an elite full-stack developer who
+              transforms ambitious visions into extraordinary digital
+              experiences. Through the artful mastery of
+              <strong>Laravel's powerful architecture</strong> and
+              <strong>meticulously crafted interfaces</strong>, I create
+              applications that transcend functionality to become works of art.
+            </p>
 
-              <!-- Statistics -->
-              <div class="hero-metrics">
-                <div class="metric-item">
-                  <div class="metric-icon">
-                    <i class="bi bi-award"></i>
-                  </div>
-                  <div class="metric-content">
-                    <div class="metric-value">6+</div>
-                    <div class="metric-label">Premium Projects</div>
-                  </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-trophy-fill"></i>
                 </div>
-
-                <div class="metric-divider">
-                  <span class="divider-ornament">❖</span>
-                </div>
-
-                <div class="metric-item">
-                  <div class="metric-icon">
-                    <i class="bi bi-code-slash"></i>
-                  </div>
-                  <div class="metric-content">
-                    <div class="metric-value">8</div>
-                    <div class="metric-label">Technologies Mastered</div>
-                  </div>
-                </div>
-
-                <div class="metric-divider">
-                  <span class="divider-ornament">❖</span>
-                </div>
-
-                <div class="metric-item">
-                  <div class="metric-icon">
-                    <i class="bi bi-heart"></i>
-                  </div>
-                  <div class="metric-content">
-                    <div class="metric-value">∞</div>
-                    <div class="metric-label">Passion & Dedication</div>
-                  </div>
+                <div class="stat-content">
+                  <div class="stat-number" data-count="7">0</div>
+                  <div class="stat-label">Premium Projects</div>
                 </div>
               </div>
 
-              <!-- CTA Buttons -->
-              <div class="hero-actions">
-                <a href="#works" class="btn-luxe btn-primary">
-                  <span class="btn-text">Explore My Work</span>
-                  <span class="btn-arrow">→</span>
-                </a>
-                <a href="#connect" class="btn-luxe btn-secondary">
-                  <span class="btn-text">Let's Collaborate</span>
-                </a>
+              <div class="stat-divider"></div>
+
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number" data-count="8">0</div>
+                  <div class="stat-label">Technologies Mastered</div>
+                </div>
+              </div>
+
+              <div class="stat-divider"></div>
+
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-infinity"></i>
+                </div>
+                <div class="stat-content">
+                  <div class="stat-number">∞</div>
+                  <div class="stat-label">Passion & Dedication</div>
+                </div>
               </div>
             </div>
 
-            <!-- Hero Visual -->
-            <div class="hero-visual fade-in-right">
-              <div class="portrait-frame">
-                <!-- Decorative Corners -->
-                <div class="frame-ornament corner-tl">
-                  <svg width="80" height="80" viewBox="0 0 80 80">
-                    <path
-                      d="M 0 80 L 0 0 L 80 0"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                    />
-                    <line
-                      x1="10"
-                      y1="0"
-                      x2="10"
-                      y2="30"
-                      stroke="currentColor"
-                      stroke-width="1"
-                    />
-                    <line
-                      x1="0"
-                      y1="10"
-                      x2="30"
-                      y2="10"
-                      stroke="currentColor"
-                      stroke-width="1"
-                    />
-                  </svg>
-                </div>
-                <div class="frame-ornament corner-tr">
-                  <svg width="80" height="80" viewBox="0 0 80 80">
-                    <path
-                      d="M 0 0 L 80 0 L 80 80"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                    />
-                    <line
-                      x1="70"
-                      y1="0"
-                      x2="70"
-                      y2="30"
-                      stroke="currentColor"
-                      stroke-width="1"
-                    />
-                    <line
-                      x1="50"
-                      y1="10"
-                      x2="80"
-                      y2="10"
-                      stroke="currentColor"
-                      stroke-width="1"
-                    />
-                  </svg>
-                </div>
-                <div class="frame-ornament corner-bl">
-                  <svg width="80" height="80" viewBox="0 0 80 80">
-                    <path
-                      d="M 0 0 L 0 80 L 80 80"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                    />
-                    <line
-                      x1="10"
-                      y1="50"
-                      x2="10"
-                      y2="80"
-                      stroke="currentColor"
-                      stroke-width="1"
-                    />
-                    <line
-                      x1="0"
-                      y1="70"
-                      x2="30"
-                      y2="70"
-                      stroke="currentColor"
-                      stroke-width="1"
-                    />
-                  </svg>
-                </div>
-                <div class="frame-ornament corner-br">
-                  <svg width="80" height="80" viewBox="0 0 80 80">
-                    <path
-                      d="M 80 0 L 80 80 L 0 80"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                    />
-                    <line
-                      x1="70"
-                      y1="50"
-                      x2="70"
-                      y2="80"
-                      stroke="currentColor"
-                      stroke-width="1"
-                    />
-                    <line
-                      x1="50"
-                      y1="70"
-                      x2="80"
-                      y2="70"
-                      stroke="currentColor"
-                      stroke-width="1"
-                    />
-                  </svg>
-                </div>
-
-                <!-- Portrait Image -->
-                <div class="portrait-container">
-                  <div class="portrait-glow"></div>
-                  <img
-                    src="WhatsApp Image 2024-07-21 at 03.11.09_a021493a.jpg"
-                    alt="Saqib Din"
-                    class="portrait-image"
-                  />
-                  <div class="portrait-overlay"></div>
-                </div>
-
-                <!-- Frame Caption -->
-                <div class="frame-caption">
-                  <span class="caption-ornament">✦</span>
-                  <span class="caption-text">Full Stack Developer</span>
-                  <span class="caption-ornament">✦</span>
-                </div>
-              </div>
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+              <a href="#works" class="btn-elite btn-primary">
+                <span>Explore My Work</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn-elite btn-secondary">
+                <span>Let's Collaborate</span>
+                <i class="bi bi-send"></i>
+              </a>
             </div>
           </div>
-        </section>
 
-        <!-- About Section -->
-        <section id="about" class="section-about">
-          <div class="section-container">
-            <!-- Section Header -->
-            <div class="section-head fade-in-up">
-              <span class="section-subtitle">
-                <span class="subtitle-ornament">━━━</span>
-                <span class="subtitle-text">Chapter One</span>
-                <span class="subtitle-ornament">━━━</span>
-              </span>
-              <h2 class="section-title">The Story Behind The Craft</h2>
-              <p class="section-intro">
-                A journey of passion, dedication, and the relentless pursuit of
-                digital excellence
-              </p>
+          <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+            <div class="visual-frame">
+              <div class="frame-decoration corner-tl"></div>
+              <div class="frame-decoration corner-tr"></div>
+              <div class="frame-decoration corner-bl"></div>
+              <div class="frame-decoration corner-br"></div>
+
+              <div class="visual-image">
+                <div class="image-glow"></div>
+                <img
+                  src="WhatsApp Image 2024-07-21 at 03.11.09_a021493a.jpg"
+                  alt="Saqib Din"
+                />
+                <div class="image-overlay"></div>
+              </div>
+
+              <!-- <div class="visual-tag">
+                <i class="bi bi-award-fill"></i>
+                <span>Full Stack Developer</span>
+              </div> -->
             </div>
+          </div>
+        </div>
 
-            <!-- About Content -->
-            <div class="about-grid">
-              <!-- Main Content -->
-              <div class="about-content fade-in-left">
-                <div class="content-block">
-                  <p class="content-lead">
-                    I am <strong>Saqib Din</strong>, a developer who believes
-                    that great software is born at the intersection of artistry
-                    and engineering. Every project I undertake is an opportunity
-                    to push boundaries, challenge conventions, and create
-                    something truly memorable.
-                  </p>
+        <div class="scroll-indicator">
+          <div class="scroll-wheel"></div>
+          <span>Scroll to Explore</span>
+        </div>
+      </section>
 
-                  <p class="content-body">
-                    My expertise spans the full spectrum of modern web
-                    development. From architecting robust
-                    <strong>Laravel applications</strong> to crafting
-                    pixel-perfect interfaces with
-                    <strong>HTML5, CSS3, and JavaScript</strong>, I bring both
-                    technical prowess and artistic sensibility to every line of
-                    code. My proficiency extends to
-                    <strong>Bootstrap frameworks</strong>,
-                    <strong>MySQL databases</strong>, and the
-                    <strong>Microsoft Office suite</strong>, enabling me to
-                    deliver comprehensive solutions that exceed expectations.
-                  </p>
+      <!-- About Section -->
+      <section id="about" class="section-about">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <div class="section-label">
+              <span class="label-line"></span>
+              <span class="label-text">Chapter One</span>
+              <span class="label-line"></span>
+            </div>
+            <h2 class="section-title">The Story Behind The Craft</h2>
+            <p class="section-subtitle">
+              A journey of passion, dedication, and relentless pursuit of
+              digital excellence
+            </p>
+          </div>
 
-                  <p class="content-body">
-                    But beyond the technologies and frameworks, what drives me
-                    is the satisfaction of solving real problems for real
-                    people. I approach each project as a craftsman approaches
-                    their masterwork — with patience, precision, and an
-                    unwavering commitment to quality.
-                  </p>
-                </div>
+          <div class="about-grid">
+            <div class="about-content" data-aos="fade-right">
+              <div class="content-card">
+                <p class="text-lead">
+                  I am <strong>Saqib Din</strong>, a developer who believes that
+                  exceptional software is born at the intersection of artistry
+                  and engineering. Every project I undertake is an opportunity
+                  to push boundaries, challenge conventions, and create
+                  something truly unforgettable.
+                </p>
 
-                <!-- Signature -->
-                <div class="content-signature">
+                <p class="text-body">
+                  My expertise spans the complete spectrum of modern web
+                  development. From architecting robust
+                  <strong>Laravel applications</strong> to crafting
+                  pixel-perfect interfaces with
+                  <strong>HTML5, CSS3, and JavaScript</strong>, I bring both
+                  technical mastery and artistic vision to every line of code.
+                </p>
+
+                <p class="text-body">
+                  Beyond technologies and frameworks, what drives me is the
+                  satisfaction of solving real problems for real people. I
+                  approach each project as a craftsman approaches their
+                  masterwork — with patience, precision, and an unwavering
+                  commitment to excellence.
+                </p>
+
+                <div class="signature-block">
                   <div class="signature-line"></div>
                   <span class="signature-text">Saqib Din</span>
                 </div>
               </div>
-
-              <!-- Sidebar -->
-              <div class="about-sidebar fade-in-right">
-                <!-- Philosophy Card -->
-                <div class="philosophy-card">
-                  <div class="card-ornament">✦</div>
-                  <h3 class="card-title">My Philosophy</h3>
-                  <p class="card-text">
-                    "Code is not just instructions for machines—it's a medium
-                    for human expression. Every function, every component, every
-                    pixel should serve both purpose and beauty."
-                  </p>
-                  <div class="card-quote-mark">"</div>
-                </div>
-
-                <!-- Values List -->
-                <div class="values-list">
-                  <div class="value-item">
-                    <div class="value-icon">
-                      <i class="bi bi-gem"></i>
-                    </div>
-                    <div class="value-content">
-                      <h4 class="value-title">Quality First</h4>
-                      <p class="value-text">
-                        Excellence in every detail, from conception to
-                        deployment
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="value-item">
-                    <div class="value-icon">
-                      <i class="bi bi-lightbulb"></i>
-                    </div>
-                    <div class="value-content">
-                      <h4 class="value-title">Innovation</h4>
-                      <p class="value-text">
-                        Pushing boundaries and embracing new possibilities
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="value-item">
-                    <div class="value-icon">
-                      <i class="bi bi-people"></i>
-                    </div>
-                    <div class="value-content">
-                      <h4 class="value-title">Collaboration</h4>
-                      <p class="value-text">
-                        Building lasting partnerships through transparent
-                        communication
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Journey Section -->
-        <section id="journey" class="section-journey">
-          <div class="section-container">
-            <!-- Section Header -->
-            <div class="section-head fade-in-up">
-              <span class="section-subtitle">
-                <span class="subtitle-ornament">━━━</span>
-                <span class="subtitle-text">Chapter Two</span>
-                <span class="subtitle-ornament">━━━</span>
-              </span>
-              <h2 class="section-title">Credentials & Expertise</h2>
             </div>
 
-            <!-- Credentials Grid -->
-            <div class="credentials-showcase">
-              <div class="credential-block fade-in-left">
-                <div class="credential-frame">
-                  <div class="credential-number">01</div>
-                  <div class="credential-icon">
-                    <i class="bi bi-mortarboard-fill"></i>
-                  </div>
-                  <h3 class="credential-title">Academic Foundation</h3>
-                  <div class="credential-divider"></div>
-                  <p class="credential-text">
-                    Bachelor's Degree in Arts with specialized coursework in Web
-                    Technologies, Database Systems, and Modern Application
-                    Architecture. Built a strong theoretical foundation to
-                    complement practical expertise.
-                  </p>
-                  <div class="credential-tags">
-                    <span class="tag">Web Technologies</span>
-                    <span class="tag">Database Design</span>
-                    <span class="tag">System Architecture</span>
-                  </div>
+            <div class="about-sidebar" data-aos="fade-left">
+              <div class="philosophy-card">
+                <div class="card-icon">
+                  <i class="bi bi-quote"></i>
                 </div>
+                <h3 class="card-title">My Philosophy</h3>
+                <p class="card-text">
+                  "Code is not just instructions for machines—it's a medium for
+                  human expression. Every function, every component, every pixel
+                  should serve both purpose and beauty."
+                </p>
               </div>
 
-              <div class="credential-block fade-in-up">
-                <div class="credential-frame">
-                  <div class="credential-number">02</div>
-                  <div class="credential-icon">
-                    <i class="bi bi-code-square"></i>
+              <div class="values-grid">
+                <div class="value-card">
+                  <div class="value-icon">
+                    <i class="bi bi-gem"></i>
                   </div>
-                  <h3 class="credential-title">Professional Experience</h3>
-                  <div class="credential-divider"></div>
-                  <p class="credential-text">
-                    Designed and developed sophisticated web applications
-                    ranging from enterprise management systems to elegant
-                    portfolio websites. Experience spans both independent
-                    projects and collaborative team environments.
-                  </p>
-                  <div class="credential-tags">
-                    <span class="tag">Full Stack Development</span>
-                    <span class="tag">Team Collaboration</span>
-                    <span class="tag">Project Leadership</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="credential-block fade-in-right">
-                <div class="credential-frame">
-                  <div class="credential-number">03</div>
-                  <div class="credential-icon">
-                    <i class="bi bi-lightning-fill"></i>
-                  </div>
-                  <h3 class="credential-title">Technical Mastery</h3>
-                  <div class="credential-divider"></div>
-                  <p class="credential-text">
-                    Comprehensive expertise across modern development stack:
-                    Laravel back-end development, responsive front-end design,
-                    database optimization, and professional documentation using
-                    Microsoft Office suite.
-                  </p>
-                  <div class="credential-tags">
-                    <span class="tag">Laravel · MySQL</span>
-                    <span class="tag">HTML · CSS · JS</span>
-                    <span class="tag">Bootstrap · Git</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Works Section -->
-        <section id="works" class="section-works">
-          <div class="section-container">
-            <!-- Section Header -->
-            <div class="section-head fade-in-up">
-              <span class="section-subtitle">
-                <span class="subtitle-ornament">━━━</span>
-                <span class="subtitle-text">Chapter Three</span>
-                <span class="subtitle-ornament">━━━</span>
-              </span>
-              <h2 class="section-title">Portfolio of Excellence</h2>
-              <p class="section-intro">
-                A curated selection of projects that showcase craftsmanship and
-                innovation
-              </p>
-            </div>
-
-            <!-- Works Gallery -->
-            <div class="works-gallery">
-              <!-- Featured Project -->
-              <article class="work-card work-featured fade-in-up">
-                <div class="work-badge">Featured Project</div>
-                <div class="work-layout">
-                  <div class="work-visual">
-                    <div class="work-number">01</div>
-                    <div class="work-icon">
-                      <i class="bi bi-building"></i>
-                    </div>
-                  </div>
-                  <div class="work-content">
-                    <h3 class="work-title">School Management System</h3>
-                    <p class="work-description">
-                      A comprehensive enterprise solution engineered with
-                      Laravel 12 and MySQL. Features complete administrative
-                      control over student records, faculty management, payroll
-                      systems, and financial tracking. Implements secure
-                      role-based authentication, dynamic dashboards with
-                      real-time analytics, and a responsive Bootstrap 5
-                      interface optimized for all devices.
+                  <div class="d-flex flex-column">
+                    <h4 class="value-title">Excellence First</h4>
+                    <p class="value-text">
+                      Uncompromising quality in every detail
                     </p>
-                    <div class="work-features">
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Role-Based Access Control</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Real-Time Analytics Dashboard</span>
-                      </div>
-                      <div class="feature-item">
-                        <i class="bi bi-check-circle-fill"></i>
-                        <span>Automated Payroll Processing</span>
-                      </div>
-                    </div>
-                    <div class="work-tech">
-                      <span class="tech-badge tech-primary">Laravel 12</span>
-                      <span class="tech-badge">MySQL</span>
-                      <span class="tech-badge">Bootstrap 5</span>
-                      <span class="tech-badge">PHP</span>
-                    </div>
                   </div>
                 </div>
-              </article>
 
-              <!-- Regular Projects Grid -->
-              <div class="works-grid">
-                <article class="work-card fade-in-left">
-                  <div class="work-layout">
-                    <div class="work-visual">
-                      <div class="work-number">02</div>
-                      <div class="work-icon">
-                        <i class="bi bi-palette"></i>
-                      </div>
-                    </div>
-                    <div class="work-content">
-                      <h3 class="work-title">Personal Portfolio Website</h3>
-                      <p class="work-description">
-                        A fully responsive portfolio showcase featuring
-                        sophisticated animations, seamless navigation, and a
-                        refined modern aesthetic. Built from the ground up with
-                        semantic HTML5, advanced CSS3, and vanilla JavaScript.
-                      </p>
-                      <div class="work-tech">
-                        <span class="tech-badge">HTML5</span>
-                        <span class="tech-badge">CSS3</span>
-                        <span class="tech-badge">JavaScript ES6</span>
-                      </div>
-                    </div>
+                <div class="value-card">
+                  <div class="value-icon">
+                    <i class="bi bi-lightbulb-fill"></i>
                   </div>
-                </article>
+                  <div class="d-flex flex-column">
+                    <h4 class="value-title">Innovation</h4>
+                    <p class="value-text">Pushing boundaries constantly</p>
+                  </div>
+                </div>
 
-                <article class="work-card fade-in-up">
-                  <div class="work-layout">
-                    <div class="work-visual">
-                      <div class="work-number">03</div>
-                      <div class="work-icon">
-                        <i class="bi bi-briefcase"></i>
-                      </div>
-                    </div>
-                    <div class="work-content">
-                      <h3 class="work-title">Company Management Platform</h3>
-                      <p class="work-description">
-                        Enterprise-grade application for managing employees,
-                        projects, and comprehensive reporting. Features robust
-                        authentication, intuitive CRUD operations, and advanced
-                        data filtering capabilities.
-                      </p>
-                      <div class="work-tech">
-                        <span class="tech-badge">Laravel</span>
-                        <span class="tech-badge">MySQL</span>
-                        <span class="tech-badge">Bootstrap</span>
-                      </div>
-                    </div>
+                <div class="value-card">
+                  <div class="value-icon">
+                    <i class="bi bi-people-fill"></i>
                   </div>
-                </article>
-
-                <article class="work-card fade-in-right">
-                  <div class="work-layout">
-                    <div class="work-visual">
-                      <div class="work-number">04</div>
-                      <div class="work-icon">
-                        <i class="bi bi-moon-stars"></i>
-                      </div>
-                    </div>
-                    <div class="work-content">
-                      <h3 class="work-title">Masjid Management System</h3>
-                      <p class="work-description">
-                        Dynamic prayer time display with automatic scheduling,
-                        event management, and donation tracking. Built with
-                        responsive JavaScript for real-time updates and mobile
-                        optimization.
-                      </p>
-                      <div class="work-tech">
-                        <span class="tech-badge">HTML</span>
-                        <span class="tech-badge">CSS</span>
-                        <span class="tech-badge">JavaScript</span>
-                      </div>
-                    </div>
+                  <div class="d-flex flex-column">
+                    <h4 class="value-title">Collaboration</h4>
+                    <p class="value-text">Building lasting partnerships</p>
                   </div>
-                </article>
-
-                <article class="work-card fade-in-left">
-                  <div class="work-layout">
-                    <div class="work-visual">
-                      <div class="work-number">05</div>
-                      <div class="work-icon">
-                        <i class="bi bi-graph-up"></i>
-                      </div>
-                    </div>
-                    <div class="work-content">
-                      <h3 class="work-title">Excel Analytics Dashboard</h3>
-                      <p class="work-description">
-                        Professional data visualization suite with automated
-                        reporting, advanced formulas, and interactive charts
-                        designed for business intelligence and decision-making.
-                      </p>
-                      <div class="work-tech">
-                        <span class="tech-badge">Microsoft Excel</span>
-                        <span class="tech-badge">Data Visualization</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="work-card fade-in-right">
-                  <div class="work-layout">
-                    <div class="work-visual">
-                      <div class="work-number">06</div>
-                      <div class="work-icon">
-                        <i class="bi bi-cart"></i>
-                      </div>
-                    </div>
-                    <div class="work-content">
-                      <h3 class="work-title">E-Commerce Platform</h3>
-                      <p class="work-description">
-                        Modern shopping experience with dynamic product
-                        filtering, interactive shopping cart, and fully
-                        responsive design that adapts seamlessly across all
-                        devices.
-                      </p>
-                      <div class="work-tech">
-                        <span class="tech-badge">HTML</span>
-                        <span class="tech-badge">Bootstrap 5</span>
-                        <span class="tech-badge">JavaScript</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Mastery Section -->
-        <section id="mastery" class="section-mastery">
-          <div class="section-container">
-            <!-- Section Header -->
-            <div class="section-head fade-in-up">
-              <span class="section-subtitle">
-                <span class="subtitle-ornament">━━━</span>
-                <span class="subtitle-text">Chapter Four</span>
-                <span class="subtitle-ornament">━━━</span>
-              </span>
-              <h2 class="section-title">Technical Arsenal</h2>
-              <p class="section-intro">
-                A comprehensive mastery of modern technologies and development
-                tools
+      <!-- Expertise Section -->
+      <section id="expertise" class="section-expertise">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <div class="section-label">
+              <span class="label-line"></span>
+              <span class="label-text">Chapter Two</span>
+              <span class="label-line"></span>
+            </div>
+            <h2 class="section-title">Credentials & Expertise</h2>
+          </div>
+
+          <div class="expertise-grid">
+            <div class="expertise-card" data-aos="fade-up" data-aos-delay="0">
+              <div class="card-number">01</div>
+              <div class="card-icon">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <h3 class="card-title">Academic Foundation</h3>
+              <div class="card-divider"></div>
+              <p class="card-text">
+                Bachelor's Degree in Arts with specialized coursework in Web
+                Technologies, Database Systems, and Modern Application
+                Architecture.
               </p>
-            </div>
-
-            <!-- Skills Grid -->
-            <div class="mastery-grid">
-              <!-- Front-End Category -->
-              <div class="mastery-category fade-in-left">
-                <div class="category-header">
-                  <div class="category-icon">
-                    <i class="bi bi-brush"></i>
-                  </div>
-                  <h3 class="category-title">Front-End Artistry</h3>
-                  <p class="category-subtitle">
-                    Creating beautiful, responsive interfaces
-                  </p>
-                </div>
-
-                <div class="skills-list">
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">HTML5 & Semantic Markup</span>
-                      <span class="skill-level">Expert</span>
-                    </div>
-                    <div class="skill-bar-container">
-                      <div class="skill-bar" style="--skill-width: 95%">
-                        <div class="skill-fill"></div>
-                        <div class="skill-shimmer"></div>
-                      </div>
-                      <span class="skill-percentage">95%</span>
-                    </div>
-                  </div>
-
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">CSS3 & Responsive Design</span>
-                      <span class="skill-level">Expert</span>
-                    </div>
-                    <div class="skill-bar-container">
-                      <div class="skill-bar" style="--skill-width: 90%">
-                        <div class="skill-fill"></div>
-                        <div class="skill-shimmer"></div>
-                      </div>
-                      <span class="skill-percentage">90%</span>
-                    </div>
-                  </div>
-
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">JavaScript ES6+</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar-container">
-                      <div class="skill-bar" style="--skill-width: 82%">
-                        <div class="skill-fill"></div>
-                        <div class="skill-shimmer"></div>
-                      </div>
-                      <span class="skill-percentage">82%</span>
-                    </div>
-                  </div>
-
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Bootstrap Framework</span>
-                      <span class="skill-level">Expert</span>
-                    </div>
-                    <div class="skill-bar-container">
-                      <div class="skill-bar" style="--skill-width: 95%">
-                        <div class="skill-fill"></div>
-                        <div class="skill-shimmer"></div>
-                      </div>
-                      <span class="skill-percentage">95%</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Back-End Category -->
-              <div class="mastery-category fade-in-right">
-                <div class="category-header">
-                  <div class="category-icon">
-                    <i class="bi bi-cpu"></i>
-                  </div>
-                  <h3 class="category-title">Back-End Engineering</h3>
-                  <p class="category-subtitle">
-                    Building robust, scalable systems
-                  </p>
-                </div>
-
-                <div class="skills-list">
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Laravel Framework</span>
-                      <span class="skill-level">Proficient</span>
-                    </div>
-                    <div class="skill-bar-container">
-                      <div class="skill-bar" style="--skill-width: 70%">
-                        <div class="skill-fill"></div>
-                        <div class="skill-shimmer"></div>
-                      </div>
-                      <span class="skill-percentage">70%</span>
-                    </div>
-                  </div>
-
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">MySQL Database</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar-container">
-                      <div class="skill-bar" style="--skill-width: 75%">
-                        <div class="skill-fill"></div>
-                        <div class="skill-shimmer"></div>
-                      </div>
-                      <span class="skill-percentage">75%</span>
-                    </div>
-                  </div>
-
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Git & Version Control</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar-container">
-                      <div class="skill-bar" style="--skill-width: 80%">
-                        <div class="skill-fill"></div>
-                        <div class="skill-shimmer"></div>
-                      </div>
-                      <span class="skill-percentage">80%</span>
-                    </div>
-                  </div>
-
-                  <div class="skill-row">
-                    <div class="skill-info">
-                      <span class="skill-name">Microsoft Office Suite</span>
-                      <span class="skill-level">Advanced</span>
-                    </div>
-                    <div class="skill-bar-container">
-                      <div class="skill-bar" style="--skill-width: 84%">
-                        <div class="skill-fill"></div>
-                        <div class="skill-shimmer"></div>
-                      </div>
-                      <span class="skill-percentage">84%</span>
-                    </div>
-                  </div>
-                </div>
+              <div class="card-tags">
+                <span class="tag">Web Technologies</span>
+                <span class="tag">Database Design</span>
+                <span class="tag">System Architecture</span>
               </div>
             </div>
-          </div>
-        </section>
 
-        <!-- Connect Section -->
-        <section id="connect" class="section-connect">
-          <div class="section-container">
-            <!-- Section Header -->
-            <div class="section-head fade-in-up">
-              <span class="section-subtitle">
-                <span class="subtitle-ornament">━━━</span>
-                <span class="subtitle-text">Chapter Five</span>
-                <span class="subtitle-ornament">━━━</span>
-              </span>
-              <h2 class="section-title">Let's Create Together</h2>
-              <p class="section-intro">
-                Ready to bring your vision to life? Let's discuss how we can
-                collaborate
+            <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-number">02</div>
+              <div class="card-icon">
+                <i class="bi bi-code-square"></i>
+              </div>
+              <h3 class="card-title">Professional Experience</h3>
+              <div class="card-divider"></div>
+              <p class="card-text">
+                Designed and developed sophisticated web applications ranging
+                from enterprise management systems to elegant portfolio
+                websites.
               </p>
+              <div class="card-tags">
+                <span class="tag">Full Stack Development</span>
+                <span class="tag">Team Collaboration</span>
+                <span class="tag">Project Leadership</span>
+              </div>
             </div>
 
-            <!-- Connect Grid -->
-            <div class="connect-grid">
-              <!-- Contact Content -->
-              <div class="connect-content fade-in-left">
-                <div class="content-wrapper">
-                  <h3 class="connect-heading">Begin Your Journey</h3>
-                  <p class="connect-text">
-                    I'm always excited to collaborate on meaningful projects
-                    that push boundaries and create real value. Whether you're
-                    looking to build a sophisticated web application, redesign
-                    your digital presence, or need a reliable partner for your
-                    development needs, I'm here to help transform your vision
-                    into reality.
-                  </p>
+            <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-number">03</div>
+              <div class="card-icon">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+              <h3 class="card-title">Technical Mastery</h3>
+              <div class="card-divider"></div>
+              <p class="card-text">
+                Comprehensive expertise across modern development stack:
+                Laravel, MySQL, responsive design, and professional
+                documentation.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Laravel · MySQL</span>
+                <span class="tag">HTML · CSS · JS</span>
+                <span class="tag">Bootstrap · Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                  <div class="connect-benefits">
-                    <div class="benefit-item">
-                      <i class="bi bi-lightning-charge-fill"></i>
-                      <span>Rapid response within 24 hours</span>
-                    </div>
-                    <div class="benefit-item">
-                      <i class="bi bi-shield-check"></i>
-                      <span>Commitment to quality and deadlines</span>
-                    </div>
-                    <div class="benefit-item">
-                      <i class="bi bi-chat-dots"></i>
-                      <span>Clear, transparent communication</span>
-                    </div>
-                  </div>
+      <!-- Works Section -->
+      <section id="works" class="section-works">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <div class="section-label">
+              <span class="label-line"></span>
+              <span class="label-text">Chapter Three</span>
+              <span class="label-line"></span>
+            </div>
+            <h2 class="section-title">Portfolio of Excellence</h2>
+            <p class="section-subtitle">
+              A curated selection of projects showcasing craftsmanship and
+              innovation
+            </p>
+          </div>
 
-                  <!-- <a
-                    href="mailto:din.97legend@gmail.com"
-                    class="btn-luxe btn-large"
-                  >
-                    <span class="btn-icon"
-                      ><i class="bi bi-envelope-fill"></i
-                    ></span>
-                    <span class="btn-text">Start a Conversation</span>
-                    <span class="btn-arrow">→</span>
-                  </a> -->
+          <!-- Featured Project -->
+          <div class="project-featured" data-aos="fade-up">
+            <div class="project-badge">Latest Project</div>
+            <div class="project-content">
+              <div class="project-visual">
+                <div class="project-number">01</div>
+                <div class="project-icon">
+                  <i class="bi bi-flower3"></i>
                 </div>
               </div>
-
-              <!-- Contact Card -->
-              <div class="connect-card fade-in-right">
-                <div class="card-wrapper">
-                  <!-- Profile -->
-                  <div class="connect-profile">
-                    <div class="profile-frame">
-                      <img src="sd.png" alt="Saqib Din" class="profile-img" />
-                      <div class="profile-ring"></div>
-                    </div>
-                    <h3 class="profile-name">Saqib Din</h3>
-                    <p class="profile-role">
-                      Full Stack Developer & Laravel Artisan
-                    </p>
-                    <div class="profile-status">
-                      <span class="status-dot"></span>
-                      <span class="status-text">Available for Projects</span>
-                    </div>
+              <div class="project-info">
+                <h3 class="project-title">Agriculture Products Platform</h3>
+                <p class="project-description">
+                  A comprehensive e-commerce platform for agricultural products
+                  built with Laravel 12 and MySQL. Features advanced product
+                  management, dynamic catalog with categories, automated
+                  quotation system, real-time email notifications, and admin
+                  dashboard with analytics.
+                </p>
+                <div class="project-features">
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Dynamic Product Catalog with Categories</span>
                   </div>
-
-                  <!-- Contact Details -->
-                  <div class="contact-details">
-                    <div class="detail-row">
-                      <div class="detail-icon">
-                        <i class="bi bi-telephone-fill"></i>
-                      </div>
-                      <div class="detail-content">
-                        <span class="detail-label">Phone</span>
-                        <span class="detail-value">+92 312 8336290</span>
-                      </div>
-                    </div>
-
-                    <div class="detail-row">
-                      <div class="detail-icon">
-                        <i class="bi bi-envelope-fill"></i>
-                      </div>
-                      <div class="detail-content">
-                        <span class="detail-label">Email</span>
-                        <span class="detail-value">din.97legend@gmail.com</span>
-                      </div>
-                    </div>
-
-                    <div class="detail-row">
-                      <div class="detail-icon">
-                        <i class="bi bi-geo-alt-fill"></i>
-                      </div>
-                      <div class="detail-content">
-                        <span class="detail-label">Location</span>
-                        <span class="detail-value"
-                          >DHA Phase 2, Islamabad, Pakistan</span
-                        >
-                      </div>
-                    </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Automated Quotation System</span>
                   </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Admin Dashboard with Analytics</span>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>Email Notification System</span>
+                  </div>
+                </div>
+                <div class="project-tech">
+                  <span class="tech-tag primary">Laravel 12</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Bootstrap 5</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                  <!-- Remote Badge -->
-                  <div class="remote-badge">
-                    <i class="bi bi-globe2"></i>
-                    <span>Open to Remote Opportunities Worldwide</span>
+          <!-- Projects Grid -->
+          <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+              <div class="project-header">
+                <div class="project-number">02</div>
+                <div class="project-icon">
+                  <i class="bi bi-building"></i>
+                </div>
+              </div>
+              <h3 class="project-title">School Management System</h3>
+              <p class="project-description">
+                Enterprise solution with Laravel 12 featuring student records,
+                faculty management, payroll systems, and financial tracking with
+                secure authentication.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel 12</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap 5</span>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-header">
+                <div class="project-number">03</div>
+                <div class="project-icon">
+                  <i class="bi bi-palette-fill"></i>
+                </div>
+              </div>
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-description">
+                Fully responsive portfolio with sophisticated animations and
+                modern aesthetic. Built with semantic HTML5, advanced CSS3, and
+                JavaScript.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript ES6</span>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-header">
+                <div class="project-number">04</div>
+                <div class="project-icon">
+                  <i class="bi bi-briefcase-fill"></i>
+                </div>
+              </div>
+              <h3 class="project-title">Company Management Platform</h3>
+              <p class="project-description">
+                Enterprise application for managing employees, projects, and
+                reporting with robust authentication and CRUD operations.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+              <div class="project-header">
+                <div class="project-number">05</div>
+                <div class="project-icon">
+                  <i class="bi bi-moon-stars-fill"></i>
+                </div>
+              </div>
+              <h3 class="project-title">Masjid Management System</h3>
+              <p class="project-description">
+                Dynamic prayer time display with automatic scheduling, event
+                management, and donation tracking for mobile optimization.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-header">
+                <div class="project-number">06</div>
+                <div class="project-icon">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+              </div>
+              <h3 class="project-title">Excel Analytics Dashboard</h3>
+              <p class="project-description">
+                Professional data visualization suite with automated reporting
+                and interactive charts for business intelligence.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Microsoft Excel</span>
+                <span class="tech-tag">Data Visualization</span>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-header">
+                <div class="project-number">07</div>
+                <div class="project-icon">
+                  <i class="bi bi-cart-fill"></i>
+                </div>
+              </div>
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">
+                Modern shopping experience with dynamic filtering, interactive
+                cart, and fully responsive design across all devices.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">Bootstrap 5</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section-skills">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <div class="section-label">
+              <span class="label-line"></span>
+              <span class="label-text">Chapter Four</span>
+              <span class="label-line"></span>
+            </div>
+            <h2 class="section-title">Technical Arsenal</h2>
+            <p class="section-subtitle">
+              Comprehensive mastery of modern technologies and development tools
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="0">
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="bi bi-palette2"></i>
+                </div>
+                <h3 class="category-title">Front-End Artistry</h3>
+                <p class="category-subtitle">
+                  Creating beautiful, responsive interfaces
+                </p>
+              </div>
+
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">HTML5 & Semantic Markup</span>
+                    <span class="skill-percent">95%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 95%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">CSS3 & Responsive Design</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 90%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">JavaScript ES6+</span>
+                    <span class="skill-percent">60%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 60%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Bootstrap Framework</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="skills-category"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="bi bi-cpu-fill"></i>
+                </div>
+                <h3 class="category-title">Back-End Engineering</h3>
+                <p class="category-subtitle">
+                  Building robust, scalable systems
+                </p>
+              </div>
+
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Laravel Framework</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 70%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">MySQL Database</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 75%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Git & Version Control</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 80%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Microsoft Office Suite</span>
+                    <span class="skill-percent">84%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 84%"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
-      <!-- Elegant Footer -->
-      <footer class="footer-elegant">
+      <!-- Contact Section -->
+      <section id="contact" class="section-contact">
+        <div class="section-container">
+          <div class="section-header" data-aos="fade-up">
+            <div class="section-label">
+              <span class="label-line"></span>
+              <span class="label-text">Chapter Five</span>
+              <span class="label-line"></span>
+            </div>
+            <h2 class="section-title">Let's Create Together</h2>
+            <p class="section-subtitle">
+              Ready to bring your vision to life? Let's discuss how we can
+              collaborate
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-content" data-aos="fade-right">
+              <h3 class="contact-heading">Begin Your Journey</h3>
+              <p class="contact-text">
+                I'm always excited to collaborate on meaningful projects that
+                push boundaries and create real value. Whether you're looking to
+                build a sophisticated web application, redesign your digital
+                presence, or need a reliable partner for your development needs,
+                I'm here to help transform your vision into reality.
+              </p>
+              <div class="contact-benefits">
+                <div class="benefit-item">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                  <span>Rapid response within 24 hours</span>
+                </div>
+                <div class="benefit-item">
+                  <i class="bi bi-shield-check"></i>
+                  <span>Commitment to quality and deadlines</span>
+                </div>
+                <div class="benefit-item">
+                  <i class="bi bi-chat-dots-fill"></i>
+                  <span>Clear, transparent communication</span>
+                </div>
+                <div class="benefit-item">
+                  <i class="bi bi-award-fill"></i>
+                  <span>Proven track record with successful projects</span>
+                </div>
+                <div class="benefit-item">
+                  <i class="bi bi-people-fill"></i>
+                  <span>Dedicated personalized support for every client</span>
+                </div>
+                <div class="benefit-item">
+                  <i class="bi bi-lightbulb-fill"></i>
+                  <span>Excellence through innovative solutions</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card" data-aos="fade-left">
+              <div class="contact-profile">
+                <div class="profile-image">
+                  <img src="sd.png" alt="Saqib Din" />
+                  <div class="profile-ring"></div>
+                </div>
+                <h3 class="profile-name">Saqib Din</h3>
+                <p class="profile-role">
+                  Full Stack Developer & Laravel Artisan
+                </p>
+                <div class="profile-status">
+                  <span class="status-dot"></span>
+                  <span>Available for Projects</span>
+                </div>
+              </div>
+
+              <div class="contact-info">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="bi bi-telephone-fill"></i>
+                  </div>
+                  <div class="info-content">
+                    <span class="info-label">Phone</span>
+                    <a href="tel:+923128336290" class="info-value"
+                      >+92 312 8336290</a
+                    >
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="bi bi-envelope-fill"></i>
+                  </div>
+                  <div class="info-content">
+                    <span class="info-label">Email</span>
+                    <a href="mailto:din.97legend@gmail.com" class="info-value"
+                      >din.97legend@gmail.com</a
+                    >
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div class="info-content">
+                    <span class="info-label">Location</span>
+                    <span class="info-value"
+                      >DHA Phase 2, Islamabad, Pakistan</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="remote-notice">
+                <i class="bi bi-globe2"></i>
+                <span>Open to Remote Opportunities Worldwide</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer-elite">
         <div class="footer-container">
-          <!-- Ornamental Divider -->
-          <div class="footer-ornament">
-            <div class="ornament-line"></div>
-            <span class="ornament-symbol">◆</span>
-            <div class="ornament-line"></div>
+          <div class="footer-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">◆</span>
+            <span class="divider-line"></span>
           </div>
 
-          <!-- Social Links -->
           <div class="social-links">
             <a
               href="https://github.com/saqib-din/"
               target="_blank"
               rel="noopener"
               class="social-link"
-              aria-label="GitHub"
             >
               <i class="bi bi-github"></i>
             </a>
@@ -1016,7 +839,6 @@
               target="_blank"
               rel="noopener"
               class="social-link"
-              aria-label="LinkedIn"
             >
               <i class="bi bi-linkedin"></i>
             </a>
@@ -1025,44 +847,34 @@
               target="_blank"
               rel="noopener"
               class="social-link"
-              aria-label="Instagram"
             >
               <i class="bi bi-instagram"></i>
             </a>
             <a
               href="https://wa.me/923168336096?text=Assalam%20o%20Alaikum"
-              class="social-link"
-              aria-label="WhatsApp"
               target="_blank"
+              class="social-link"
             >
               <i class="bi bi-whatsapp"></i>
             </a>
           </div>
 
-          <!-- Copyright -->
-          <div class="copyright">
-            <p class="copyright-text">
-              <span class="copyright-symbol">©</span>
-              <span id="year"></span>
+          <div class="footer-copyright">
+            <p>
+              <span>© <span id="year">2025</span></span>
               <span class="copyright-divider">·</span>
-              <span class="copyright-name">Saqib Din</span>
+              <span>Saqib Din</span>
               <span class="copyright-divider">·</span>
-              <span class="copyright-tagline"
-                >Crafted with Passion & Precision</span
-              >
+              <span>Crafted with Passion & Precision</span>
             </p>
           </div>
 
-          <!-- Footer Quote -->
-          <div class="footer-quote">
-            <p class="quote-text">
-              "Excellence is not a skill, it's an attitude."
-            </p>
-          </div>
+          <!-- <div class="footer-quote">
+            <p>"Excellence is not a skill, it's an Attitude"</p>
+          </div> -->
         </div>
       </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
